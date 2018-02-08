@@ -1,19 +1,20 @@
-var num = 89473523;
+// function addition() {
+//     var sum = 0;
+//     for(i = 0; i < arguments.length; i++) {
+//         sum += arguments[i];
+//     }
+//     return sum;
+// }
 
-function sumOfDigits(n) {
+// console.log(addition(3,6,8,0,6,4,6,8));
 
-    var sum = 0;
-    var lastDigit;
-    while (n > 0) {
-        lastDigit = n % 10;
-        n = (n - lastDigit) / 10;
-        sum = sum + lastDigit;
 
-        while (n >= 10) {
-            n = (n - n % 10) / 10;
-        }
-    }
-    return sum;
+
+
+function isString(a){
+    if (typeof a == "string") { return true;}
+    else return false;
+
 }
+console.log(isString("abc"));
 
-console.log(sumOfDigits(num));
