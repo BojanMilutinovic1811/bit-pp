@@ -4,4 +4,4 @@ function convertDecToHex(a) {
     return b;
 }
 
-console.log(convertStrToNum(123));
+console.log(convertDecToHex(123));
