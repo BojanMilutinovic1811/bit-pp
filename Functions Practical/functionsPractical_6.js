@@ -4,25 +4,27 @@
 // * * * * * * *
 
 
-
-
-function horizontalChart (numberFirst, numberSecond, numberThird) {
+function horizontalChart (firstNumber, secondNumber, thirdNumber) {
+    var newString = "";
     var star = "*";
-    var starRow ="";
-    for (i=0; i<arguments.length; i++) {
-        
-        for (j=0; j<arguments[i]; j++) {
-           
-            starRow += star; 
-            }
-            console.log(starRow);
-            starRow = "";
-            
-        }
-        
-          
+    for (var i=0; i<firstNumber; i++) {
+        newString+=star;
     }
-    return starRow;
+    newString += "\n";
+    
+    for (var j=0; j<secondNumber; j++) {
+        
+        newString += star; 
+    }
+    newString += "\n";
+    for (var k=0; k<thirdNumber; k++) {
+        
+        newString += star;
+    }
+    return newString; 
 }
 
-console.log(horizontalChart(5, 3, 6));
+console.log(horizontalChart(2,3,4));
+
+
+
